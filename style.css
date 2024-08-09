@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* CSS HEX */
+ --azul fraquinho: #bee9e8ff;
+ --azul-bebễ: #62b6cbff;
+ --azul-forte: #1b4965ff;
+ --azul-fraco: #cae9ffff;
+ --azul: #5fa8d3ff;
+}
