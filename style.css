@@ -10,3 +10,19 @@
  --azul-fraco: #cae9ffff;
  --azul: #5fa8d3ff;
 }
+
+body{
+    background-image: url(img/vecteezy_the-blue-underwater-sea-with_22967094.jpg);
+}
+.cabecalho{
+    background-color: var(--azulcor-bebê);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+.cabecalho-img{
+    width: 10%;
+    border-radius:100%;
+
+}
