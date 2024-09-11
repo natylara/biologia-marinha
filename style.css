@@ -1,28 +1,192 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-:root{
- --azul-fraquinho: #bee9e8ff;
- --azul-bebễ: #62b6cbff;
- --azul-forte: #1b4965ff;
- --azul-fraco: #cae9ffff;
- --azul: #5fa8d3ff;
+:root {
+    --azul-fraquinho: #bee9e8ff;
+    --azul-bebe: #62b6cbff;
+    --azul-forte: #1b4965ff;
+    --azul-fraco: #cae9ffff;
+    --azul: #5fa8d3ff;
+    --branco: rgb(238, 238, 238);
 }
 
-body{
-    background-image: url(img/vecteezy_the-blue-underwater-sea-with_22967094.jpg);
+body {
+    background-image: url('img/vecteezy_the-blue-underwater-sea-with_22967094.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: var(--azul-forte);
 }
-.cabecalho{
-    background-color: var(--azulcor-bebê);
+
+.cabecalho {
+    background-color: var(--azul-bebe);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px;
+    padding: 12px 20px;
 }
-.cabecalho-img{
-    width: 10%;
-    border-radius:100%;
 
+.cabecalho-logo {
+    width: 120px; /* Ajuste conforme necessário */
+    height: auto;
+    border-radius: 50%;
+}
+
+.cabecalho-nav {
+    display: flex;
+}
+
+.cabecalho-nav-link {
+    color: var(--azul-forte);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.cabecalho-nav-link:hover {
+    text-decoration: underline;
+}
+
+.principal {
+    padding: 20px;
+}
+
+.principal-capa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--azul-fraquinho);
+    border-radius: 10px;
+}
+
+.principal-capa-conteudo {
+    max-width: 50%;
+}
+
+.principal-capa-titulo {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--azul-forte);
+}
+
+.principal-capa-texto {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: var(--azul-forte);
+}
+
+.principal-capa-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--azul-bebe);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.principal-capa-link:hover {
+    background-color: var(--azul-forte);
+}
+
+.principal-capa-imagem {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.produtos {
+    padding: 20px;
+    background-color: var(--azul-fraco);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.produtos-titulo {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--branco);
+}
+
+.produtos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.produto-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.produto-imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.produto-nome {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.produto-descricao {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.produto-preco {
+    font-size: 1.2rem;
+    color: var(--azul-forte);
+    margin: 10px 0;
+}
+
+.produto-comprar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--azul-bebe);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.produto-comprar:hover {
+    background-color: var(--azul-forte);
+}
+
+.sobre-produtos {
+    padding: 20px;
+    background-color: var(--azul-bebe);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.sobre-produtos-titulo {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--azul-forte);
+}
+
+.sobre-produtos-texto {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.rodape {
+    background-color: var(--azul-bebe);
+    text-align: center;
+    padding: 10px;
+    color: var(--azul-forte);
 }
